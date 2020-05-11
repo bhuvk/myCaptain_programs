@@ -1,0 +1,26 @@
+#assigning elements to different lists
+name=['mike','joe','pearl','pipe']
+number=[1,2,3,4]
+print(name)
+print(number)
+name.append('bhuvan')
+number.append(5)
+print(name)
+print(number)
+
+#accessing elements from a tuple
+mytuple=("c","c++","python")
+# to  print pyhton from the tuple
+n=(mytuple.index("python"))
+print(mytuple[n])
+
+#deleting different dictionary elements
+dict1={"c":"easy","python":"easiest","c++":"easier"}
+print(dict1)
+#deleting one element
+del dict1["python"]
+print(dict1)
+#deleting evrythingn
+del dict1
+print(dict1)
+
