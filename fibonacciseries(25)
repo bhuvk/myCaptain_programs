@@ -1,0 +1,13 @@
+#first 25 numbers of fibonacci series
+a=0
+b=1
+n=25
+print(a)
+print(b)
+while n>0:
+    c=a+b
+    print(c)
+    a=b
+    b=c
+    c=0
+    n=n-1
