@@ -1,4 +1,5 @@
 #image classification program
+#importing dependencies
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
@@ -7,7 +8,7 @@ from sklearn.model_selection import train_test_split
 %matplotlib inline
 data= pd.read_csv('http://query.data.world/s/z2i77f6nei7fiotnb63sbacfu6zlfw')
 data.head()
-data
+print(data)
 a=data.iloc[3,1:].values
 a=a.reshape(28,28).astype('uint8')
 plt.imshow(a)
@@ -18,14 +19,14 @@ y_train.head()
 rf=RandomForestClassifier(n_estimators=100)
 rf.fit(x_train, y_train)
 pred= rf.predict(x_test)
-pred
+print(pred)
 s=y_test.values
 
 count=0
 for i in range(len(pred)):
     if pred[i]==s[i]:
         count=count+1
-        count
+print(count)
 len(pred)
 #accuracy level
 14000/14000
